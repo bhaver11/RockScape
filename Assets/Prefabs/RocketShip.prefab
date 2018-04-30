@@ -184,7 +184,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 35b45b232f6cb3a4b990ab273d586472, type: 2}
+  - {fileID: 2100000, guid: ff9298678290ed74cac45c7fb79ac533, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -218,7 +218,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: ff9298678290ed74cac45c7fb79ac533, type: 2}
+  - {fileID: 2100000, guid: 25e7d4915e6aaa84dbc975382423ba99, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -252,7 +252,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 35b45b232f6cb3a4b990ab273d586472, type: 2}
+  - {fileID: 2100000, guid: ff9298678290ed74cac45c7fb79ac533, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -341,13 +341,13 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1550373194923316}
   serializedVersion: 2
-  m_Mass: 0.05
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Mass: 0.1
+  m_Drag: 0.2
+  m_AngularDrag: 0.2
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
+  m_Interpolate: 1
+  m_Constraints: 56
   m_CollisionDetection: 0
 --- !u!65 &65639297565650334
 BoxCollider:
@@ -396,7 +396,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7cdb5e5fd93ce5b4794d8277f388f666, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.774
   m_Pitch: 0.8
   Loop: 0
   Mute: 0
@@ -408,7 +408,7 @@ AudioSource:
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
-  BypassEffects: 1
+  BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
   rolloffCustomCurve:
@@ -476,6 +476,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dc86bbb6e06df34380a8c3a23612762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rcsThrust: 150
+  upperThrust: 150
 --- !u!135 &135023468497839862
 SphereCollider:
   m_ObjectHideFlags: 1
